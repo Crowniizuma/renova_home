@@ -343,6 +343,9 @@ main {
                                         display: flex;
                                         justify-content: center;
                                         @include vw('width', 100, 1366, 1366, 1023);
+                                        @include SP {
+                                            @include vw('width', 90, 375, 768, 375);
+                                        }
                                         background-color: #e5f5fd;
                                         @include vw('padding-top', 10, 1366, 1366, 1023);
                                         @include vw('padding-bottom', 10, 1366, 1366, 1023);
@@ -421,21 +424,44 @@ main {
                                 //width: ((380 / 400) * 100%);
                                 background-color: #ffffff;
 
+                                
 
                                 a {
                                     
                                     .panel_img {
                                         width: 100%;
                                         overflow: hidden;
-            
                                         img {
                                             width: 100%;
                                             transition: transform 0.2s linear;
                                         }
+                                        
                                     }
                                 }
 
                                 .panel_content {
+                                    &.new {
+                                        position: relative;
+    
+                                        &::before {
+                                            content: "";
+                                            background-image: url('/assets/img/img_pc/main/articles/new_mark.png');
+                                            @include vw('width', 40, 1366, 1366, 1023);
+                                            @include vw('height', 40, 1366, 1366, 1023);
+                                            background-size: cover;
+                                            position: absolute;
+                                            z-index: 1;
+                                            @include vw('right', 11, 1366, 1366, 1023);
+                                            @include vw('top', -20, 1366, 1366, 1023);
+    
+                                            @include SP {
+                                                @include vw('width', 40, 375, 768, 375);
+                                                @include vw('height', 40, 375, 768, 375);
+                                                @include vw('right', 20, 375, 768, 375);
+                                                @include vw('top', -20, 375, 768, 375);
+                                            }
+                                        }
+                                    }
                                     padding-left: calc((20 / 380) * 100%);
                                     padding-right: calc((20 / 380) * 100%);
                                     @include vw('padding-top', 30, 1366, 1366, 1023);

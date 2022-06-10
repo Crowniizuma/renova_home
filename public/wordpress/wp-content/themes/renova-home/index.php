@@ -169,7 +169,13 @@
                                         the_field('Image')
                                     ?>">
 								</div>
-								<div class="panel_content">
+								<div class="panel_content 
+                                    <?php
+                                        $category = get_the_category();
+                                        if($category) {
+                                            echo $category[0]->name;
+                                        }
+                                    ?>">
 									<p class="big_text">
 										<?php the_title() ?>
 									</p>
@@ -179,9 +185,20 @@
 									<div class="small_text">
                                         <?php the_content(); ?>
                                     </div>
-                                    <!-- <div class="tag">
+                                    <ul class="keyword">
                                         
-                                    </div> -->
+                                        <?php 
+                                            $tags = get_the_tags();
+                                            if($tags) {
+                                                foreach( $tags as $tag ) {
+                                        ?>
+                                        <li>
+                                            <?php echo $tag->name;
+                                                }
+                                            }
+                                        ?>
+                                        </li>
+                                    </ul>
 								</div>
 							</a>
 						</li>
