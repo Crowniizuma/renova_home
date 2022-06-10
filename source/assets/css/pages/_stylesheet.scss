@@ -1,0 +1,90 @@
+@include googlefonts_NotoSansJP((400,700));
+@include googlefonts_NotoSerifJP((400,700));
+
+.contents {
+	padding: 50px;
+
+	pre {
+		background: #eeeeee;
+		padding: 10px;
+		font-size: 15px;
+		font-family: monospace;
+		line-height: 1.5;
+		margin-top: 25px;
+	}
+	li {
+		margin-bottom: 100px;
+	}
+}
+.noto-sans-jp {
+	font-size: 60px;
+	font-family: 'Noto Sans JP';
+}
+.noto-serif-jp {
+	font-size: 60px;
+	font-family: 'Noto Serif JP';
+}
+.vw {
+	background: #0f0;
+	@include vw(width, 500, 1000, 1200, 250);
+	@include vw(height, 250, 1000, 1200, 250);
+}
+.pc-red-sp-blue {
+	width: 200px;
+	height: 200px;
+
+	@include PC {
+		background: #f00;
+	}
+	@include SP {
+		background: #00f;
+	}
+}
+
+.loading {
+	position: relative;
+	height: 100px;
+
+	&:before {
+		@include loading(50, 5, #ccc, #000) {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -25px;
+			margin-left: -25px;
+		}
+	}
+}
+
+.triangle {
+	span {
+		display: inline-block;
+	}
+	span:nth-child(1) {
+		@include triangle(T, 20px, 20px, #000);
+	}
+	span:nth-child(2) {
+		@include triangle(B, 20px, 20px, #000);
+	}
+	span:nth-child(3) {
+		@include triangle(L, 20px, 20px, #000);
+	}
+	span:nth-child(4) {
+		@include triangle(R, 20px, 20px, #000);
+	}
+}
+
+.cross {
+	position: relative;
+	height: 50px;
+	background: #ccc;
+	
+	@include cross(20, 2, #000, 45deg) {
+		&:before,
+		&:after {
+			top: 50%;
+			right: 50px;
+		}
+	}
+}

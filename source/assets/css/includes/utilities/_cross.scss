@@ -1,0 +1,23 @@
+// クロス
+@mixin cross($size, $thickness, $color, $angle:0) {
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: $size + 0px;
+		height: $thickness + 0px;
+		background-color: $color;
+		position: absolute;
+		//margin-top: -($thickness / 2) + 0px;
+		//margin-left: -($size / 2) + 0px;
+		transition: transform 0.25s ease;
+	}
+	&:before {
+		transform: rotate($angle + 0deg);
+	}
+	&:after {
+		transform: rotate($angle + 90deg);
+	}
+	@content;
+}
+

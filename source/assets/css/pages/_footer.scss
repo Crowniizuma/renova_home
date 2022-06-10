@@ -1,0 +1,150 @@
+footer {
+    width: 100vw;
+    position: relative;
+    .footer_container {
+        width: 100%;
+        background-color: #f0f0f0;
+        @include vw('padding-top', 80, 1366, 1366, 1023);
+        @include vw('padding-bottom', 60, 1366, 1366, 1023);
+
+        .footer_list_pc {
+            max-width: 1280px;
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            
+            .list {
+
+                &:nth-child(1) {
+                    width: calc((224 / 1200) * 100%);
+                }
+                &:nth-child(2) {
+                    width: calc((224.5 / 1200) * 100%);
+                }
+                &:nth-child(3) {
+                    width: calc((225.5 / 1200) * 100%);
+                }
+                &:nth-child(4) {
+                    width: calc((224 / 1200) * 100%);
+                }
+                &:nth-child(5) {
+                    width: calc((225.5 / 1200) * 100%);
+                }
+
+            }
+
+            .parent {
+                .parent_name {
+                    @include vw('padding-bottom', 18, 1366, 1366, 1023);
+                    border-bottom: 1px solid #cccccc;
+                    a {
+                        @include vw('font-size', 16, 1366, 1366, 1023);
+                        color: #333333;
+
+                        &:hover {
+                            color: #666666;
+                        }
+                    }
+
+                    &.no_child {
+                        @include vw('margin-bottom', 70, 1366, 1366, 1023);
+                    }
+                }
+
+                .child {
+                    @include vw('padding-top', 18, 1366, 1366, 1023);
+                    display: flex;
+                    flex-direction: column;
+                    @include vw('row-gap', 27, 1366, 1366, 1023);
+                    .child_name {
+                        a {
+                            @include vw('font-size', 13, 1366, 1366, 1023);
+                            color: #666666;
+
+                            &:hover {
+                                color: #cccccc;
+                            }
+                        }
+                    }
+                }
+
+                .extension_icon {
+                    position: relative;
+                    @include vw('padding-right', 22, 1366, 1366, 1023);
+                    &::after {
+                        content: "";
+                        background-image: url('/assets/img/img_pc/header_and_footer/extension_icon.png');
+                        background-size: cover;
+                        @include vw('height', 13, 1366, 1366, 1023);
+                        @include vw('width', 13, 1366, 1366, 1023);
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .others_and_copyright {
+        margin: auto;
+        max-width: 1280px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        @include vw('padding-top', 30, 1366, 1366, 1023);
+        @include vw('padding-bottom', 30, 1366, 1366, 1023);
+        display: flex;
+        justify-content: space-between;
+        .others {
+            display: flex;
+            @include vw('column-gap', 40, 1366, 1366, 1023);
+
+            li {
+                a {
+                    @include vw('font-size', 12, 1366, 1366, 1023);
+                    color: #333333;
+                }
+            }
+        }
+
+        .copyright {
+            @include vw('font-size', 12, 1366, 1366, 1023);
+            color: #333333;
+        }
+    }
+
+    .scroll {
+        max-width: 1280px;
+        padding-right: 40px;
+        margin: auto;
+        position: absolute;
+        @include vw('top', -25, 1366, 1366, 1023);
+        right: 0;
+
+        .scroll_container {
+            @include vw('width', 50, 1366, 1366, 1023);
+            cursor: pointer;
+
+            .hover {
+                display: none;
+            }
+
+            &:hover {
+                
+                .normal {
+                    display: none;
+                }
+
+                .hover {
+                    display: initial;
+                }
+            }
+        }
+    }
+}
