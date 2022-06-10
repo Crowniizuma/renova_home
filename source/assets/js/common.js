@@ -29,8 +29,8 @@ $(document).ready(function(){
     })
     
     //choose languages
-    const langTitle = $('.lang_title');
-    const langOption = $('.language_option');
+    const langTitle = $('.lang_title_pc');
+    const langOption = $('.language_option_pc');
     
     langTitle.click(function() {
         searchBar.removeClass('open');
@@ -81,19 +81,7 @@ $(document).ready(function(){
         return false;
     })
     
-    //タンプレート作成
-    //const template = Handlebars.compile($(".template").html());
-    
-    // const newsHtml = template(window.newsData);
-    // const ulNews = $('.news_content');
-    // ulNews.html(newsHtml);
-    
-    //const template2 = Handlebars.compile($(".template2").html());
     const articlesList = $('.panels_list');
-    //const articlesHtml = template2(window.articlesData);
-    // console.log(articlesHtml);
-    // articlesList.html(articlesHtml);
-
     //articles template
     console.log("a");
     articlesList.slick({
@@ -123,6 +111,14 @@ $(document).ready(function(){
             child.slideToggle();
             parent.toggleClass('open');
         })
+    });
+
+
+    const hamburgerMenu = $('.hamburger_menu');
+    const dropMenu = $('.drop_menu');
+    hamburgerMenu.click(function() {
+        hamburgerMenu.toggleClass('clicked');
+        dropMenu.slideToggle();
     })
 
 });

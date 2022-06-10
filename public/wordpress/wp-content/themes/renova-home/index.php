@@ -121,17 +121,28 @@
                 ?>
                 <ul class="news_content">
                         <li class="news_li">
-                            <div class="date_and_label">
-                                <div class="date">
-                                    <?php the_time('Y年m月d日'); ?>
-                                </div>
-                                <div class="label">
-                                    <?php the_category(); ?>
-                                </div>
-                            </div>
-                            <div class="content">
-								<?php the_title(); ?>
-							</div>
+							<?php 
+								$url = get_field('url');
+							?>
+
+							<!-- <a <?php if($url) : ?>href="<?php the_field('url') ?>" <?php endif; ?>> -->
+								<a href="<?php the_field('url') ?>">
+								<div class="date_and_label">
+									<div class="date">
+										<?php the_time('Y年m月d日'); ?>
+									</div>
+									<div class="label">
+										<?php 
+										$category = get_the_category();
+                                        if($category) {
+                                            echo $category[0]->name;
+                                        } ?> 
+									</div>
+								</div>
+								<div class="content">
+									<?php the_title(); ?>
+								</div>
+							</a>
 						</li>
 					</script>
 				</ul>

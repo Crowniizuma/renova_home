@@ -18,6 +18,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        @include SP {
+            border-bottom: 1px solid #f0f0f0;
+        }
 
         .nav_bar {
             max-width: 1366px;
@@ -307,12 +310,24 @@ header {
                 display: flex;
                 @include vw('column-gap', 13, 1366, 1366, 1023);
 
+                @include SP {
+                    border-bottom: 1px solid #f0f0f0;
+
+                    @include vw('padding-top', 30, 375, 768, 375);
+                    @include vw('padding-bottom', 30, 375, 768, 375);
+                    justify-content: center;
+                }
                 li {
                    .color_container {
                        display: flex;
                        align-items: center;
                        justify-content: center;
                        @include vw('width', 150, 1366, 1366, 1023);
+                       @include SP {
+                            @include vw('width', 160, 375, 768, 375);
+                            @include vw('height', 50, 375, 768, 375);
+                            @include vw('border-radius', 90, 375, 768, 375);
+                       }
                        height: 40px;
                        border-radius: 20px;
                        border: 1px solid transparent;
@@ -328,6 +343,10 @@ header {
                             p{
                                 @include vw('font-size', 14, 1366, 1366, 1023);
                                 color: #ffffff;
+                                @include SP {
+                                    @include vw('font-size', 13, 375, 768, 375);
+                                    font-weight: bold;
+                               }
                             }
                        }
 
@@ -473,13 +492,24 @@ header {
             }
 
             .language {
+                @include SP {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-top: 1px solid #f0f0f0;
+                    @include vw('padding-top', 40, 375, 768, 375);
+                }
                 
+
                 .lang_title {
                     @include vw('font-size',14, 1366, 1366, 1023);
                     color: #666666;
                     @include vw('padding-left',28, 1366, 1366, 1023);
                     position: relative;
                     cursor: pointer;
+                    @include SP {
+                        @include vw('font-size', 14, 375, 768, 375);
+                        @include vw('padding-left', 25, 375, 768, 375);
+                    }
 
                     &::before {
                         content: "";
@@ -505,7 +535,8 @@ header {
                     }
                 }
 
-                .language_option {
+                .language_option_pc {
+                    display: none;
                     position: absolute;
                     top: 100px;
                     left: 0;
@@ -514,12 +545,12 @@ header {
                     background-color: $backgroundColor;
                     align-items: center;
                     justify-content: center;
-                    display: none;
 
                     &.open {
                         display: flex;
                     }
-
+                }
+                .language_option {
                     .language_list_container {
                         max-width: 1366px;
                         width: 100%;
@@ -529,6 +560,12 @@ header {
                             @include vw('column-gap', 40, 1366, 1366, 1023);
                             justify-content: flex-end;
                             @include vw('padding-right', 40, 1366, 1366, 1023);
+
+                            @include SP {
+                                justify-content: flex-start;
+                                @include vw('font-size', 14, 375, 768, 375);
+                                @include vw('margin-top', 20, 375, 768, 375);
+                            }
 
                             .other_language {
                                 position: relative;
@@ -560,6 +597,148 @@ header {
                                 }
                             }
     
+                        }
+                    }
+
+                }
+            }
+
+            .drop_menu_container {
+                .hamburger_menu {
+                    @include vw('width', 20, 375, 768, 375);
+                    @include vw('height', 20, 375, 768, 375);
+                    position: relative;
+                    
+                    .line {
+                        width: 100%;
+                        @include vw('height', 3, 375, 768, 375);
+                        background-color: #666666;
+                        @include vw('border-radius', 3, 375, 768, 375);
+                        position: absolute;
+                        transition: transform .3s ease-out, top 0.2s ease 0.3s, width .2s ease-out 0.3s ; 
+                    }
+
+                    .line_1 {
+                        top: 0;
+                    }
+
+                    .line_2 {
+                        @include vw('top', 8, 375, 768, 375); 
+                    }
+
+                    .line_3 {
+                        @include vw('top', 17, 375, 768, 375); 
+                    }
+                    
+                    &.clicked {
+                        .line {
+                            transition: top 0.2s ease, width .2s ease-out, transform .3s ease-out 0.2s;
+                        }
+                        .line_1 {
+                            top: 50%;
+                            transform: rotate(45deg);
+                        }
+                        .line_2 {
+                            opacity: 0;
+                        }
+                        .line_3 {
+                            top: 50%;
+                            transform: rotate(135deg);
+                        }
+                    }
+                }
+                .drop_menu {
+                    display: none;
+                    @include vw('padding-bottom', 60, 375, 768, 375);
+                    overflow: auto;
+                    width: 100%;
+                    height: calc(100vh - (60 / 1023) * 100vw);
+                    @include vw('top', 60, 375, 768, 375);
+                    left: 0;
+                    //display: none;
+                    position: absolute;
+                    background-color: #ffffff;
+
+                    .footer_list_sp {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .li {
+                            width: 100%;
+                            @include vw('padding-top', 20, 375, 768, 375);
+                            @include vw('padding-bottom', 20, 375, 768, 375);
+                            @include vw('font-size', 14, 375, 768, 375);
+                            
+                            &:not(:first-child) {
+                                border-top: 1px solid #dddddd;
+                            }
+                        }
+                        
+                        .parent {
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #dddddd;
+                            }
+                            .parent_name {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    background-color: #999999;
+                                    @include vw('width', 12, 375, 768, 375);
+                                    @include vw('height', 2, 375, 768, 375);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+            
+                                &::after {
+                                    content: "";
+                                    background-color: #999999;
+                                    @include vw('width', 2, 375, 768, 375);
+                                    @include vw('height', 12, 375, 768, 375);
+                                    position: absolute;
+                                    @include vw('right', 5.5, 375, 768, 375);
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+            
+                                &.open {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                            }
+            
+                            .child {
+                                display: none;
+                                position: relative;
+                                margin-left: -20px;
+                                margin-right: -20px;
+                                padding-left: 40px;
+                                padding-right: 40px;
+                                background-color: #f0f0f0;
+                                .child_name {
+                                    &:first-child {
+                                        border-top: 1px solid #dddddd;
+                                    }
+                                    @include vw('padding-left', 15, 375, 768, 375);
+                                    position: relative;
+            
+                                    &::before {
+                                        content: "";
+                                        background-image: url('/assets/img/img_pc/header_and_footer/child-arrow.png');
+                                        background-size: cover;
+                                        @include vw('width', 4, 375, 768, 375);
+                                        @include vw('height', 8, 375, 768, 375);
+                                        left: 0;
+                                        position: absolute;
+                                    }
+            
+                                }
+                            }
+            
                         }
                     }
                 }

@@ -299,7 +299,19 @@ main {
                     @include vw('padding-top', 10, 1366, 1366, 1023);
                     width: 100%;
                     
-                    .news_li {
+                    .news_li a {
+                        &[href=""] {
+                            pointer-events: none;
+                            &:hover {
+                                background-color: none;
+                            }
+                        }
+                        &:not([href=""]) {
+                            &:hover {
+                                background-color: #ccc;
+                            }
+                        }
+                        display: block;
                         width: 100%;
                         padding-left: 40px;
                         padding-right: 40px;
@@ -337,35 +349,29 @@ main {
                             .label {
                                 padding: 0;
                                 width: fit-content;
-                                .post-categories {
-                                    li {
-                                        padding: 0;
-                                        display: flex;
-                                        justify-content: center;
-                                        @include vw('width', 100, 1366, 1366, 1023);
-                                        @include SP {
-                                            @include vw('width', 90, 375, 768, 375);
-                                        }
-                                        background-color: #e5f5fd;
-                                        @include vw('padding-top', 10, 1366, 1366, 1023);
-                                        @include vw('padding-bottom', 10, 1366, 1366, 1023);
-                                        border-radius: 3px;
-
-                                        a {
-                                            padding: 0;
-                                            @include vw('font-size', 14, 1366, 1366, 1023);
-            
-                                            @include SP {
-                                                @include vw('font-size', 12, 375, 768, 375);
-                                            }
-            
-                                            color: #333333;
-                                            text-align: center;
-                                        }
-
-                                    }
-
+                                padding: 0;
+                                display: flex;
+                                justify-content: center;
+                                @include vw('width', 100, 1366, 1366, 1023);
+                                @include SP {
+                                    @include vw('width', 90, 375, 768, 375);
                                 }
+                                background-color: #e5f5fd;
+                                @include vw('padding-top', 10, 1366, 1366, 1023);
+                                @include vw('padding-bottom', 10, 1366, 1366, 1023);
+                                border-radius: 3px;
+
+                                @include vw('font-size', 14, 1366, 1366, 1023);
+
+                                @include SP {
+                                    @include vw('font-size', 12, 375, 768, 375);
+                                }
+
+                                color: #333333;
+                                text-align: center;
+                                       
+
+                                
                             }
                         }
     

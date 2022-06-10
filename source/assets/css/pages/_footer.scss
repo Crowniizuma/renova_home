@@ -250,14 +250,14 @@ footer {
 
     .scroll-sp {
         width: 100%;
-        @include vw('height', 63, 1366, 1366, 1023);
+        @include vw('height', 63, 375, 768, 375);
         display: flex;
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid #f0f0f0;
 
         img {
-            @include vw('width', 16, 1366, 1366, 1023);
+            @include vw('width', 16, 375, 768, 375);
         }
     }
 }
