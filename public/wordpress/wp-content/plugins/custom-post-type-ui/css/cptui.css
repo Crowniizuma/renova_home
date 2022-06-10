@@ -29,7 +29,7 @@
 }
 
 .posttypesui .required, .taxonomiesui .required {
-  color: red;
+  color: #ff0000;
 }
 
 .cptui-table td.outer {

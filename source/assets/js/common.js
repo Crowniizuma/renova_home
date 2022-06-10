@@ -112,4 +112,17 @@ $(document).ready(function(){
             }
         ]
     });
+
+    const footerListSP = $('.footer_list_sp');
+    const parentSection = footerListSP.find(".parent");
+    parentSection.each(function() {
+        const parent = $(this).find(".parent_name");
+        const child = $(this).find(".child");
+
+        parent.click(function() {
+            child.slideToggle();
+            parent.toggleClass('open');
+        })
+    })
+
 });

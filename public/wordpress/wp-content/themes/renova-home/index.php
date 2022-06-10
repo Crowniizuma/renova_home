@@ -35,26 +35,26 @@
 				  <!-- Slides -->
 					<div class="swiper-slide" data-color="white">
 						<picture>
-							<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/slideshow/pic_1.png">
-							<img src="./assets/img/img_pc/main/slideshow/pic_1.png">
+							<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/slideshow/pic_1.png">
+							<img src="/assets/img/img_pc/main/slideshow/pic_1.png">
 						</picture>
 					</div>
 					<div class="swiper-slide" data-color="white">
 						<picture>
-							<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/slideshow/pic_2.png">
-							<img src="./assets/img/img_pc/main/slideshow/pic_2.png">
+							<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/slideshow/pic_2.png">
+							<img src="/assets/img/img_pc/main/slideshow/pic_2.png">
 						</picture>
 					</div>
 					<div class="swiper-slide" data-color="white">
 						<picture>
-							<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/slideshow/pic_3.png">
-							<img src="./assets/img/img_pc/main/slideshow/pic_3.png">
+							<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/slideshow/pic_3.png">
+							<img src="/assets/img/img_pc/main/slideshow/pic_3.png">
 						</picture>
 					</div>
 					<div class="swiper-slide" data-color="black">
 						<picture>
-							<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/slideshow/pic_4.png">
-							<img src="./assets/img/img_pc/main/slideshow/pic_4.png">
+							<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/slideshow/pic_4.png">
+							<img src="/assets/img/img_pc/main/slideshow/pic_4.png">
 						</picture>
 					</div>
 				</div>
@@ -259,20 +259,20 @@
 						<ul>
 							<li class="text">
 								<picture>
-									<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/map/text.png">
-									<img src="./assets/img/img_pc/main/renewable_energy_business/map/text.png">
+									<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/map/text.png">
+									<img src="/assets/img/img_pc/main/renewable_energy_business/map/text.png">
 								</picture>
 							</li>
 							<li class="map jp_map">
 								<picture>
-									<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/map/jp_map.png">
-									<img src="./assets/img/img_pc/main/renewable_energy_business/map/jp_map.png">
+									<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/map/jp_map.png">
+									<img src="/assets/img/img_pc/main/renewable_energy_business/map/jp_map.png">
 								</picture>
 							</li>
 							<li class="map asia_map">
 								<picture>
-									<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/map/south_east_asia_map.png">
-									<img src="./assets/img/img_pc/main/renewable_energy_business/map/south_east_asia_map.png">
+									<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/map/south_east_asia_map.png">
+									<img src="/assets/img/img_pc/main/renewable_energy_business/map/south_east_asia_map.png">
 								</picture>
 							</li>
 						</ul>
@@ -285,8 +285,8 @@
 								<p>太陽光発電</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/pic_1.png">
-								<img src="./assets/img/img_pc/main/renewable_energy_business/pic_1.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/pic_1.png">
+								<img src="/assets/img/img_pc/main/renewable_energy_business/pic_1.png">
 							</picture>
 						</a>
 					</li>
@@ -297,8 +297,8 @@
 								<p>陸上風力発電</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/pic_2.png">
-								<img src="./assets/img/img_pc/main/renewable_energy_business/pic_2.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/pic_2.png">
+								<img src="/assets/img/img_pc/main/renewable_energy_business/pic_2.png">
 							</picture>
 						</a>
 					</li>
@@ -308,8 +308,8 @@
 								<p>バイオマス発電</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/pic_3.png">
-								<img src="./assets/img/img_pc/main/renewable_energy_business/pic_3.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/pic_3.png">
+								<img src="/assets/img/img_pc/main/renewable_energy_business/pic_3.png">
 							</picture>
 						</a>
 					</li>
@@ -319,8 +319,8 @@
 								<p>地熱発電</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/pic_4.png">
-								<img src="./assets/img/img_pc/main/renewable_energy_business/pic_4.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/pic_4.png">
+								<img src="/assets/img/img_pc/main/renewable_energy_business/pic_4.png">
 							</picture>
 						</a>
 					</li>
@@ -330,8 +330,8 @@
 								<p>水力発電</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/renewable_energy_business/pic_5.png">
-								<img src="./assets/img/img_pc/main/renewable_energy_business/pic_5.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/renewable_energy_business/pic_5.png">
+								<img src="/assets/img/img_pc/main/renewable_energy_business/pic_5.png">
 							</picture>
 						</a>
 					</li>
@@ -348,8 +348,8 @@
 								<p>会社概要・アクセス</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/pic_1.png">
-								<img src="./assets/img/img_pc/main/company_info/pic_1.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/pic_1.png">
+								<img src="/assets/img/img_pc/main/company_info/pic_1.png">
 							</picture>
 						</a>
 					</li>
@@ -359,8 +359,8 @@
 								<p>CEOメッセージ</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/pic_2.png">
-								<img src="./assets/img/img_pc/main/company_info/pic_2.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/pic_2.png">
+								<img src="/assets/img/img_pc/main/company_info/pic_2.png">
 							</picture>
 						</a>
 					</li>
@@ -370,8 +370,8 @@
 								<p>経営メンバー</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/pic_3.png">
-								<img src="./assets/img/img_pc/main/company_info/pic_3.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/pic_3.png">
+								<img src="/assets/img/img_pc/main/company_info/pic_3.png">
 							</picture>
 						</a>
 					</li>
@@ -381,8 +381,8 @@
 								<p>企業理念</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/pic_4.png">
-								<img src="./assets/img/img_pc/main/company_info/pic_4.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/pic_4.png">
+								<img src="/assets/img/img_pc/main/company_info/pic_4.png">
 							</picture>
 						</a>
 					</li>
@@ -392,8 +392,8 @@
 								<p>私たちの想い</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/pic_5.png">
-								<img src="./assets/img/img_pc/main/company_info/pic_5.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/pic_5.png">
+								<img src="/assets/img/img_pc/main/company_info/pic_5.png">
 							</picture>
 						</a>
 					</li>
@@ -403,13 +403,13 @@
 								<p>VOICE</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/pic_6.png">
-								<img src="./assets/img/img_pc/main/company_info/pic_6.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/pic_6.png">
+								<img src="/assets/img/img_pc/main/company_info/pic_6.png">
 							</picture>
 							<div class="voice">
 								<picture>
-									<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/company_info/voice.png">
-									<img src="./assets/img/img_pc/main/company_info/voice.png">
+									<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/company_info/voice.png">
+									<img src="/assets/img/img_pc/main/company_info/voice.png">
 								</picture>
 							</div>
 						</a>
@@ -427,13 +427,13 @@
 								<p>採用情報</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/recruitment/pic_1.png">
-								<img src="./assets/img/img_pc/main/recruitment/pic_1.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/recruitment/pic_1.png">
+								<img src="/assets/img/img_pc/main/recruitment/pic_1.png">
 							</picture>
 							<div class="jirei">
 								<picture>
-									<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/recruitment/jirei.png">
-									<img src="./assets/img/img_pc/main/recruitment/jirei.png">
+									<source media="(max-width: 1023px)" src="/public/assets/img/img_sp/main/recruitment/jirei.png">
+									<img src="/assets/img/img_pc/main/recruitment/jirei.png">
 								</picture>
 							</div>
 						</a>
@@ -444,8 +444,8 @@
 								<p>集え、マルチエンジニア。</p>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/recruitment/pic_2.png">
-								<img src="./assets/img/img_pc/main/recruitment/pic_2.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/recruitment/pic_2.png">
+								<img src="/assets/img/img_pc/main/recruitment/pic_2.png">
 							</picture>
 						</a>
 					</li>
@@ -465,16 +465,16 @@
 								</div>
 							</div>
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/interview/pic_1.png">
-								<img src="./assets/img/img_pc/main/interview/pic_1.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/interview/pic_1.png">
+								<img src="/assets/img/img_pc/main/interview/pic_1.png">
 							</picture>
 						</a>
 					</li>
 					<li class="pic">
 						<a href="">
 							<picture>
-								<source media="(max-width: 1023px)" srcset="./assets/img/img_sp/main/interview/pic.png">
-								<img src="./assets/img/img_pc/main/interview/pic.png">
+								<source media="(max-width: 1023px)" srcset="/assets/img/img_sp/main/interview/pic.png">
+								<img src="/assets/img/img_pc/main/interview/pic.png">
 							</picture>
 						</a>
 					</li>
