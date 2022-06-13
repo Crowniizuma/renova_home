@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	
-	<title></title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-
-	<meta property="og:title" content="">
-	<meta property="og:description" content="">
-	<meta property="og:image" content="/assets/images/common/ogp.jpg">
-	<meta name="twitter:card" content="summary_large_image">
-	<link rel="icon" href="/assets/images/common/favicon.ico">
-	<link rel="apple-touch-icon" href="/assets/images/common/apple-touch-icon.png">
-	
-	<link rel="stylesheet" href="/assets/css/common.css">
+	<!--#include virtual="/assets/ssi/meta.html" -->
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	
 </head>
 <body>
@@ -174,11 +159,12 @@
                 ?>
 
 						<li class="panel">
-							<a href="">
+							<a href="<?php the_permalink() ?>">
 								<div class="panel_img">
                                     <img src="<?php 
-                                        the_field('Image')
-                                    ?>">
+													$images = get_field('images');
+													echo($images[0]['image']);
+												?>">
 								</div>
 								<div class="panel_content 
                                     <?php
@@ -194,10 +180,14 @@
                                         <?php the_time('Y年m月d日'); ?>
 									</p>
 									<div class="small_text">
-                                        <?php the_content(); ?>
+                                        <?php 
+										$abstract = get_field('abstract');
+										if($abstract) {
+											echo $abstract;
+										}
+										?>
                                     </div>
                                     <ul class="keyword">
-                                        
                                         <?php 
                                             $tags = get_the_tags();
                                             if($tags) {
@@ -227,36 +217,6 @@
                         wp_reset_postdata();
                         ?>
 				</ul>
-                
-				<!-- <ul class="panels_list">
-					<script type="text/x-handlebars-template" class="template2">
-						{{#each articles}}
-						<li class="panel">
-							<a href="">
-								<div class="panel_img">
-									<img src=>
-								</div>
-								<div class="panel_content">
-									<p class="big_text">
-										{{title}}
-									</p>
-									<p class="date">
-										{{date}}
-									</p>
-									<p class="small_text">
-										{{content}}
-									</p>
-									<ul class="keyword">
-										{{#each keywords}}
-										<li>{{this}}</li>
-										{{/each}}
-									</ul>
-								</div>
-							</a>
-						</li>
-						{{/each}}
-					</script>
-				</ul> -->
 			</div>
 		</section>
 		<section class="renewable_business">
@@ -494,15 +454,5 @@
 		</section>
 	</main>
 	<!--#include virtual="/assets/ssi/footer.html" -->
-	<script src="/assets/js/libraries/jquery.js"></script>
-	<script src="/assets/js/libraries/jquery.easing.js"></script>
-	<script src="/assets/js/libraries/picturefill.js"></script>
-	<script src="/assets/js/libraries/scrollmagic.js"></script>
-	<script src="/assets/js/libraries/bodyscrolllock.js"></script>
-	<script src="/assets/js/common.js"></script>
-	<script src="/assets/js/data.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
